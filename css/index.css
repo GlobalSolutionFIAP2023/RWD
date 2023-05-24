@@ -6,3 +6,32 @@
     box-sizing: border-box;
     font-family: 'Concert One';
 }
+
+body{
+    background-image: url(../img/background-agrovida.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img{
+    width: 70px;
+    margin: 20px 0px 0px 20px;
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 20px;
+    list-style-type: none;
+}
+.navbar .nav-item{
+    margin: 0px 15px;
+    color: white;
+    cursor: pointer;
+}
