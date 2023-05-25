@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/script.js" defer></script>
+    <link rel="shortcut icon" href="../img/logo-agrovida.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contato.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <figure>
+                <img src="../img/logo-agrovida.png" alt="Logo AgroVida">
+            </figure>
+            <ul>
+                <li class="nav-item home"><ion-icon name="home-outline"></ion-icon>Home</li>
+                <li class="nav-item agricultura"><ion-icon name="leaf-outline"></ion-icon>Agricultura Sustentável</li>
+                <li class="nav-item inteligencia"><ion-icon name="hardware-chip-outline"></ion-icon>IA's Generativas</li>
+                <li class="nav-item cultivo"><ion-icon name="bulb-outline"></ion-icon>Modelos de cultivo eficientes</li>
+                <li class="nav-item contato"><ion-icon name="reader-outline"></ion-icon>Contato</li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+
+        <form action="" method="post">
+            <fieldset>
+                <legend>Contato:</legend>
+                <p>
+                    <label for="idNome">Nome:</label>
+                    <input type="text" name="nome" id="idNome" placeholder="José Bonifácio" required>
+                </p>
+                <p>
+                    <label for="idSobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="idSobrenome" placeholder="Pereira Fagundes" required>
+                </p>
+                <p>
+                    <label for="idEmail">Email:</label>
+                    <input type="email" name="email" id="idEmail" placeholder="josebonifacio@email.com" required>
+                </p>
+                <p>
+                    <label for="idEmail">Gênero:</label>
+                    <select name="cars" id="idSelect" required>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Nenhum">Nenhum</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="idTelefone">Telefone:</label>
+                    <input type="text" name="telefone" id="idTelefone" placeholder="(11) 9 9999-9999" required>
+                </p>
+                <p>
+                    <label for="idEndereco">Endereço:</label>
+                    <input type="text" name="endereco" id="idEndereco" placeholder="Rua das Flores 123" required>
+                </p>
+                <p>
+                    <label for="idDataNasc">Data de Nascimento:</label>
+                    <input type="date" name="dataNasc" id="idDataNasc" required>
+                </p>
+                <p>
+                    <label for="idAssunto">Assunto:</label>
+                    <input type="text" name="assunto" id="idAssunto" placeholder="Plantar em Solo Arenoso" required>
+                </p>
+                <p>
+                    <label for="idMensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="idMensagem" cols="30" rows="10" required></textarea>
+                </p>
+                <p>
+                    <label for="idArquivo">Foto (opcional):</label>
+                    <input type="file" name="arquivo" id="idArquivo">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </fieldset>
+        </form>
+        
+    </section>
+
+</body>
+</html>

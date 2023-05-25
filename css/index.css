@@ -1,8 +1,172 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Share+Tech&display=swap');
 
+@import url(./navbar.css);
+@import url(./footer.css);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Concert One';
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(167, 255, 159);
+    border-radius: 20px;
+    border: 3px solid rgb(209, 255, 200);
+}
+
+
+
+body{
+    background-image: url(../img/fundo-body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+
+.navbar .home{
+    text-decoration: underline;
+}
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+section .agricultura-sustentavel{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.agricultura-sustentavel img{
+    max-width: 100%;
+    aspect-ratio: 3/2;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+.agricultura-sustentavel figcaption{
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+.agricultura-sustentavel button{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.173);
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: ease-out .3s;
+}
+.agricultura-sustentavel button:hover{
+    transform: scaleX(1.1);
+    transition: ease-in .2s;
+    background-color: rgba(92, 253, 64, 0.847);
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+section .IA-generativa{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.IA-generativa img{
+    max-width: 100%;
+    aspect-ratio: 3/2;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+.IA-generativa figcaption{
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+.IA-generativa button{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.173);
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: ease-out .3s;
+}
+.IA-generativa button:hover{
+    transform: scaleX(1.1);
+    transition: ease-in .2s;
+    background-color: rgba(92, 253, 64, 0.847);
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+section .cultivo-eficiente{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cultivo-eficiente img{
+    max-width: 100%;
+    aspect-ratio: 3/2;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+.cultivo-eficiente figcaption{
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+.cultivo-eficiente button{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.173);
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: ease-out .2s;
+}
+.cultivo-eficiente button:hover{
+    transform: scaleX(1.1);
+    transition: ease-in .2s;
+    background-color: rgba(92, 253, 64, 0.847);
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    cursor: pointer;
 }

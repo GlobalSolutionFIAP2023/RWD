@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img{
+    width: 70px;
+    margin: 20px 0px 0px 100px;
+    cursor: pointer;
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 100px 0px 0px;
+    list-style-type: none;
+}
+.navbar .nav-item{
+    margin: 0px 10px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all .3s;
+}
+.navbar .nav-item:hover{
+    transform: scale(1.1);
+    color: chartreuse;
+    transition: all .3s;
+}
