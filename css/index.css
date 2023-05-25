@@ -10,8 +10,22 @@
     font-family: 'Concert One';
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(167, 255, 159);
+    border-radius: 20px;
+    border: 3px solid rgb(209, 255, 200);
+}
+
+
+
 body{
-    background-image: url(../img/background-agrovida.jpg);
+    background-image: url(../img/fundo-body.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
