@@ -30,3 +30,33 @@
     color: chartreuse;
     transition: all .3s;
 }
+
+
+
+@media (max-width: 1130px) {
+    .navbar{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .navbar img{
+        padding: 0;
+        margin: 0;
+    }
+    .navbar ul{
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 888px){
+    .navbar ul{
+        flex-direction: column;
+        text-align: center;
+        margin: 15px 0px;
+    }
+    .navbar .nav-item{
+        margin: 5px 0px;
+        font-size: 20px;
+    }
+    
+}
