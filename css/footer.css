@@ -1,10 +1,7 @@
 footer{
     width: 100%;
-<<<<<<< VitorMiranda
     height: 70px;
-=======
     height: 50px;
->>>>>>> main
     background-color: rgba(1, 169, 96, 0.922);
 }
 footer ul{
@@ -25,11 +22,8 @@ footer .social-media{
     height: 50px;
     justify-content: center;
     align-items: center;
-<<<<<<< VitorMiranda
     background-color: rgba(255, 255, 255, 0.206);
-=======
     background-color: rgba(255, 255, 255, 0.608);
->>>>>>> main
     height: 140%;
 }
 
@@ -43,7 +37,6 @@ footer #instagram{
     width: 100px;
     height: 50px;
     color: rgb(255, 68, 0);
-<<<<<<< VitorMiranda
     transition: all .6s;
 }
 footer #instagram:hover{
@@ -55,8 +48,6 @@ footer #instagram:hover{
     border-radius: 100px;
     transition: all .6s;
 }
-=======
-}
 footer #instagram:hover{
     width: 45.5px; /* Proporção de 6.5px */
     height: 49px;  /*Proporção de 7px*/
@@ -65,15 +56,12 @@ footer #instagram:hover{
     background-color: rgb(255, 68, 0);
     border-radius: 100px;
 }
->>>>>>> main
-
 
 
 footer #facebook{
     width: 100px;
     height: 50px;
     color: rgb(0, 0, 255);
-<<<<<<< VitorMiranda
     transition: all .6s;
 }
 
@@ -87,42 +75,20 @@ footer #facebook:hover{
     transition: all .6s;
 }
 
-=======
-}
-
-footer #facebook:hover{
-    width: 45.5px; /* Proporção de 6.5px */
-    height: 49px;  /*Proporção de 7px*/
-    padding: 5px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 255);
-    border-radius: 100px;
-}
-
->>>>>>> main
 footer #twitter{
     width: 100px;
     height: 50px;
     color: rgba(0, 162, 255, 0.986);
-<<<<<<< VitorMiranda
     transition: all .6s;
 }
 
 footer #twitter:hover{
-=======
-}
-
-footer  #twitter:hover{
->>>>>>> main
     width: 45.5px; /* Proporção de 6.5px */
     height: 49px;  /*Proporção de 7px*/
     padding: 5px;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 162, 255, 0.986);
     border-radius: 100px;
-<<<<<<< VitorMiranda
     transition: all .6s;
-=======
->>>>>>> main
 }
 
