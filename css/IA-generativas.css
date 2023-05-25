@@ -73,3 +73,44 @@ body{
     font-size: 3rem;
 
 }
+
+
+.container > .func-IA{
+
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    margin-top: 5%;
+
+    
+}
+
+.container > .func-IA > .img-func {
+    width: 70%;
+}
+
+.container > .func-IA > .img-func > img{
+    border-radius: 50px;
+    aspect-ratio: 4/2.2;
+    width: 100%;
+    
+    
+}
+
+.container > .func-IA > .text-func{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 5%;
+    font-size: 1.5rem;
+    
+}
+
+.container > .func-IA > .text-func > .titulo-func{
+
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 2.5rem;
+    
+
+}
