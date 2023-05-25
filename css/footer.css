@@ -1,7 +1,7 @@
 footer{
     width: 100%;
     height: 50px;
-    background-color: rgb(1, 169, 96);
+    background-color: rgba(1, 169, 96, 0.922);
 }
 footer ul{
     display: flex;
@@ -21,23 +21,65 @@ footer .social-media{
     height: 50px;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.608);
+    height: 140%;
 }
+
+
 footer .social-media-item{
     margin: 0 20px;
     cursor: pointer;
 }
+
 footer #instagram{
-    width: 40px;
-    height: 40px;
-    color: orangered;
+    width: 100px;
+    height: 50px;
+    color: rgb(255, 68, 0);
+    transition: all .6s;
 }
+footer #instagram:hover{
+    width: 45.5px; /* Proporção de 6.5px */
+    height: 49px;  /*Proporção de 7px*/
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 68, 0);
+    border-radius: 100px;
+    transition: all .6s;
+}
+
+
+
 footer #facebook{
-    width: 40px;
-    height: 40px;
-    color: blue;
+    width: 100px;
+    height: 50px;
+    color: rgb(0, 0, 255);
+    transition: all .6s;
 }
+
+footer #facebook:hover{
+    width: 45.5px; /* Proporção de 6.5px */
+    height: 49px;  /*Proporção de 7px*/
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 255);
+    border-radius: 100px;
+    transition: all .6s;
+}
+
 footer #twitter{
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 50px;
     color: rgba(0, 162, 255, 0.986);
+    transition: all .6s;
 }
+
+footer #twitter:hover{
+    width: 45.5px; /* Proporção de 6.5px */
+    height: 49px;  /*Proporção de 7px*/
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 162, 255, 0.986);
+    border-radius: 100px;
+    transition: all .6s;
+}
+
