@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Concert+One&family=Share+Tech&display=swap%27');
 @import url(./navbar.css);
 @import url(./footer.css);
 
@@ -6,11 +6,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Concert One';
+    font-family: 'Bebas Neue', sans-serif;  
 }
 
 body{
-    background-image: url(../img/background-agrovida.jpg);
+    background-image: url(../img/background-IA.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -20,3 +20,141 @@ body{
 .navbar .inteligencia{
     text-decoration: underline;
 }
+
+.container{
+    padding: 0 8%;
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: justify;
+    text-align: center;
+}
+
+.container >  h1{
+    text-decoration: underline;
+    margin-top: 10%;
+}
+   
+
+.container > .intro-IA{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    margin-top: 5%;
+    
+}
+
+.container > .intro-IA > .img-intro {
+    width: 100%;
+  
+}
+
+.container > .intro-IA > .img-intro > img{
+    border-radius: 50px;
+    aspect-ratio: 4/2.2;
+    width: 100%;
+    
+}
+
+.container > .intro-IA > .text-intro{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 5%;
+    
+
+    
+}
+
+.container > .intro-IA > .text-intro > .titulo-intro{
+
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+
+.container > .func-IA{
+
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    margin-top: 5%;
+
+    
+}
+
+.container > .func-IA > .img-func {
+    width: 70%;
+}
+
+.container > .func-IA > .img-func > img{
+    border-radius: 50px;
+    aspect-ratio: 4/2.2;
+    width: 100%;
+    
+    
+}
+
+.container > .func-IA > .text-func{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 5%;
+    font-size: 1.5rem;
+    
+}
+
+.container > .func-IA > .text-func > .titulo-func{
+
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 2.5rem;
+    
+
+}
+
+
+.container > .agro-IA{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    margin-top: 5%;
+    
+}
+
+.container > .agro-IA > .img-agro {
+    width: 70%;
+  
+}
+
+.container > .agro-IA > .img-agro > img{
+    border-radius: 50px;
+    aspect-ratio: 4/2.2;
+    width: 100%;
+    
+}
+
+.container > .agro-IA > .text-agro{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 5%;
+    font-size: 1.5rem;
+    
+
+    
+}
+
+.container > .agro-IA > .text-agro > .titulo-agro{
+
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+
+
+
