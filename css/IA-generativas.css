@@ -67,6 +67,12 @@ body{
     
 }
 
+.container > .intro-IA > .text-intro > p{
+    font-family: 'Bebas Neue', sans-serif;
+
+    
+}
+
 .container > .intro-IA > .text-intro > .titulo-intro{
 
     margin-bottom: 5%;
@@ -108,6 +114,10 @@ body{
     font-family: 'Bebas Neue', sans-serif;
 }
 
+.container > .func-IA > .text-func > p{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
 .container > .func-IA > .text-func > .titulo-func{
 
     margin-bottom: 5%;
@@ -123,6 +133,7 @@ body{
     align-items: center;
     height: 60vh;
     margin-top: 5%;
+    
     
 }
 
@@ -149,6 +160,11 @@ body{
     
 }
 
+.container > .agro-IA > .text-agro > p{
+    font-family: 'Bebas Neue', sans-serif;
+    
+}
+
 .container > .agro-IA > .text-agro > .titulo-agro{
 
     margin-bottom: 5%;
@@ -160,3 +176,81 @@ body{
 
 
 
+@media (max-width: 880px){
+    
+    
+       
+    
+    .container > .intro-IA{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 60vh;
+        margin-top: 5%;
+        
+    }
+    
+    .container > .intro-IA > .img-intro {
+        width: 100%;
+        margin-bottom: 5%;
+      
+    } 
+    
+    
+    .container > .func-IA{
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 60vh;
+        margin-top: 5%;
+    
+        
+    }
+    
+    .container > .func-IA > .img-func {
+        width: 70%;
+        margin-bottom: 5%;
+    }
+    
+    
+    .container > .func-IA > .text-func{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 5%;
+        font-size: 1.5rem;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    
+    
+    .container > .agro-IA{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        
+    }
+    
+    .container > .agro-IA > .img-agro {
+        width: 70%;
+        margin-bottom: 5%;
+      
+    }
+ 
+    
+    .container > .agro-IA > .text-agro{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 5%;
+        font-size: 1.5rem;
+        font-family: 'Bebas Neue', sans-serif;
+    
+        
+    }
+    
+
+    
+}
