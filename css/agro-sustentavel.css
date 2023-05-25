@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Concert+One&family=Share+Tech&display=swap');
 @import url(./navbar.css);
 @import url(./footer.css);
 
@@ -19,4 +20,202 @@ body{
 
 .navbar .agricultura{
     text-decoration: underline;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+
+
+.o-que-eh-agricultura{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    padding: 0px 60px;
+}
+
+.o-que-eh-agricultura img{
+    max-width: 40%;
+    border-radius: 30px;
+}
+.o-que-eh-agricultura .content{
+    width: 100%;
+    padding-left: 50px;
+}
+.content .titulo-o-que-eh{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.content p{
+    font-size: 25px;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: justify;
+}
+
+
+
+.praticas-agricolas{
+    height: 330vh;
+    padding: 0px 60px;
+    margin-top: 8%;
+}
+.praticas-agricolas .titulo-exemplos{
+    text-align: center;
+    font-size: 45px;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+
+.praticas-agricolas .sistemas-florestais{
+    display: flex;
+    margin-top: 2%;
+}
+.sistemas-florestais .titulo-sistemas-florestais{
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 35px;
+}
+.sistemas-florestais .content{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sistemas-florestais img{
+    border-radius: 30px;
+    width: 50%;
+    aspect-ratio: 3/1.7;
+}
+
+
+
+
+
+.praticas-agricolas .agri-organica{
+    display: flex;
+    margin-top: 5%;
+}
+.agri-organica .titulo-agri-organica{
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 35px;
+}
+.agri-organica .content{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.agri-organica img{
+    border-radius: 30px;
+    width: 50%;
+    aspect-ratio: 3/1.7;
+}
+
+
+
+
+.praticas-agricolas .agri-biodinamica{
+    display: flex;
+    margin-top: 5%;
+}
+.agri-biodinamica .titulo-biodinamica{
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 35px;
+}
+.agri-biodinamica .content{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.agri-biodinamica img{
+    border-radius: 30px;
+    width: 50%;
+    aspect-ratio: 3/1.7;
+}
+
+
+
+.praticas-agricolas .agri-natural{
+    display: flex;
+    margin-top: 5%;
+}
+.agri-natural .titulo-agri-natural{
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 35px;
+}
+.agri-natural .content{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.agri-natural img{
+    border-radius: 30px;
+    width: 50%;
+    aspect-ratio: 3/1.7;
+}
+
+
+
+.praticas-agricolas .permacultura{
+    display: flex;
+    margin-top: 5%;
+}
+.permacultura .titulo-permacultura{
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 35px;
+}
+.permacultura .content{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.permacultura img{
+    border-radius: 30px;
+    width: 50%;
+    aspect-ratio: 3/1.7;
+}
+
+
+
+
+.eficiencia-agricola{
+    display: flex;
+    padding: 0px 60px;
+    margin-bottom: 5%;
+}
+
+.eficiencia-agricola img{
+    max-width: 40%;
+    border-radius: 30px;
+}
+.eficiencia-agricola .content{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.eficiencia-agricola .titulo-eficiencia{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5%;
 }
