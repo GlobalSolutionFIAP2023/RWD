@@ -25,16 +25,20 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 89vh;
 }
 
+
+
 fieldset{
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border: none;
     background-color: rgba(0, 0, 0, 0.222);
     border-radius: 15px;
     padding: 0px 25px;
-    margin: 500px 0px 100px 0px;
+    margin: 0px 20px;
 }
 
 fieldset legend{
@@ -97,3 +101,5 @@ fieldset input[type="submit"]:hover{
     transition: ease-in .3s;
     letter-spacing: 2px;
 }
+
+
