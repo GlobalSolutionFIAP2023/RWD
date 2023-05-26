@@ -1,6 +1,5 @@
 footer{
     width: 100%;
-    height: 70px;
     height: 50px;
     background-color: rgba(1, 169, 96, 0.922);
 }
@@ -92,3 +91,116 @@ footer #twitter:hover{
     transition: all .6s;
 }
 
+
+
+@media (max-width: 1130px) {
+    footer{
+        width: 100%;
+        margin-top: 5%;
+        height: 150px;
+        background-color: rgba(1, 169, 96, 0.922);
+        font-size: 1.5rem;
+    }
+
+    footer .social-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.206);
+        background-color: rgba(255, 255, 255, 0.608);
+        height: 110%;
+    }
+
+    footer #instagram{
+        width: 100px;
+        height: 70px;
+        color: rgb(255, 68, 0);
+        transition: all .6s;
+    }
+    footer #instagram:hover{
+        width: 71.5px; /* Proporção de 6.5px */
+        height: 77px;  /*Proporção de 7px*/
+        padding: 5px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 68, 0);
+        border-radius: 100px;
+        transition: all .6s;
+    }
+    footer #instagram:hover{
+        width: 71.5px; /* Proporção de 6.5px */
+        height: 77px;  /*Proporção de 7px*/
+        padding: 5px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 68, 0);
+        border-radius: 100px;
+    }
+    
+    
+    footer #facebook{
+        width: 100px;
+        height: 70px;
+        color: rgb(0, 0, 255);
+        transition: all .6s;
+    }
+    
+    footer #facebook:hover{
+        width: 71.5px; /* Proporção de 6.5px */
+        height: 77px;  /*Proporção de 7px*/
+        padding: 5px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 255);
+        border-radius: 100px;
+        transition: all .6s;
+    }
+    
+    footer #twitter{
+        width: 100px;
+        height: 70px;
+        color: rgba(0, 162, 255, 0.986);
+        transition: all .6s;
+    }
+    
+    footer #twitter:hover{
+        width: 45.5px; /* Proporção de 6.5px */
+        height: 49px;  /*Proporção de 7px*/
+        padding: 5px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 162, 255, 0.986);
+        border-radius: 100px;
+        transition: all .6s;
+    }
+    
+}
+
+@media (max-width: 888px){
+    footer ul{
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        padding: 0 2%;
+    }
+    
+}
+
+@media (max-width: 480px){
+    footer{
+        width: 100%;
+        margin-top: 5%;
+        height: 180px;
+        background-color: rgba(1, 169, 96, 0.922);
+        font-size: 1.5rem;
+    }
+
+    footer .social-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.206);
+        background-color: rgba(255, 255, 255, 0.608);
+        height: 90%;
+    }
+    
+}
