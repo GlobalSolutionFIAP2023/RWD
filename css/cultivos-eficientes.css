@@ -61,3 +61,16 @@ h1{
     font-family: 'Bebas Neue', sans-serif;
     text-align: justify;
 }
+
+
+
+.exemplos-de-modelos {
+    padding: 0px 200px;
+    margin-top: 12%;
+}
+.exemplos-de-modelos .titulo-exemplos {
+    text-align: center;
+    font-size: 45px;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', sans-serif;
+}
