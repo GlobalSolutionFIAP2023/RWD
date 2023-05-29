@@ -15,6 +15,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: top;
+    backdrop-filter: blur(5px);
 }
 
 .navbar .inteligencia{
@@ -30,10 +31,17 @@ body{
     text-align: center;
 }
 
-.container >  h1{
-    text-decoration: underline;
-    margin-top: 10%;
+.container > h1{
+    text-align: center;
+    font-size: 8rem;
+    color: #fff;
     font-family: 'Bebas Neue', sans-serif;
+    margin-top: 18%;
+    margin-bottom: 29%;
+    background: linear-gradient(90deg, #00ff00 0%, #0055ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.271);
 }
    
 
@@ -42,90 +50,68 @@ body{
     align-items: center;
     height: 60vh;
     margin-top: 5%;
-    
 }
-
 .container > .intro-IA > .img-intro {
     width: 100%;
-  
 }
-
 .container > .intro-IA > .img-intro > img{
     border-radius: 50px;
     aspect-ratio: 4/2.2;
     width: 100%;
-    
 }
-
+.container > .intro-IA > .text-intro > .titulo-intro{
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
 .container > .intro-IA > .text-intro{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-left: 5%;
     font-family: 'Bebas Neue', sans-serif;
-
-    
 }
-
 .container > .intro-IA > .text-intro > p{
     font-family: 'Bebas Neue', sans-serif;
-
-    
+    font-size: 2rem;
 }
 
-.container > .intro-IA > .text-intro > .titulo-intro{
-
-    margin-bottom: 5%;
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Bebas Neue', sans-serif;
-
-}
 
 
 .container > .func-IA{
-
     display: flex;
     align-items: center;
     height: 60vh;
     margin-top: 5%;
-
-    
 }
-
 .container > .func-IA > .img-func {
     width: 70%;
 }
-
 .container > .func-IA > .img-func > img{
     border-radius: 50px;
     aspect-ratio: 4/2.2;
     width: 100%;
-    
-    
 }
-
+.container > .func-IA > .text-func > .titulo-func{
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
 .container > .func-IA > .text-func{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-right: 5%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Bebas Neue', sans-serif;
 }
-
 .container > .func-IA > .text-func > p{
     font-family: 'Bebas Neue', sans-serif;
 }
 
-.container > .func-IA > .text-func > .titulo-func{
 
-    margin-bottom: 5%;
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: 'Bebas Neue', sans-serif;
-
-}
 
 
 .container > .agro-IA{
@@ -133,22 +119,21 @@ body{
     align-items: center;
     height: 60vh;
     margin-top: 5%;
-    
-    
 }
-
 .container > .agro-IA > .img-agro {
     width: 70%;
-  
 }
-
 .container > .agro-IA > .img-agro > img{
     border-radius: 50px;
     aspect-ratio: 4/2.2;
     width: 100%;
-    
 }
-
+.container > .agro-IA > .text-agro > .titulo-agro{
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
 .container > .agro-IA > .text-agro{
     display: flex;
     flex-direction: column;
@@ -156,39 +141,30 @@ body{
     padding-left: 5%;
     font-size: 1.5rem;
     font-family: 'Bebas Neue', sans-serif;
-
-    
 }
-
 .container > .agro-IA > .text-agro > p{
     font-family: 'Bebas Neue', sans-serif;
-    
+    font-size: 2rem;
 }
 
-.container > .agro-IA > .text-agro > .titulo-agro{
 
-    margin-bottom: 5%;
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: 'Bebas Neue', sans-serif;
-}
 
 
 
 
 @media (max-width: 1130px){
-       
-    
+    .container > h1{
+        font-size: 7rem;
+    }
+
     .container > .intro-IA {
        margin: 0;
        padding: 0;
        height: 50vh;
-
     }  
 
     .container > .intro-IA > .img-intro {
         width: 50%;
-
     }    
 
     .container > .intro-IA > .img-intro  > img{
@@ -200,7 +176,6 @@ body{
         margin: 0;
         padding: 0;
         height: 50vh;
-
     }  
     
     .container > .func-IA > .img-func {
@@ -209,35 +184,26 @@ body{
 
     .container > .func-IA > .img-func > img{
         aspect-ratio: 7/5.2;
-        
     }
 
     .container > .agro-IA {
         margin: 0;
         padding: 0;
         height: 50vh;
- 
     }  
     
     .container > .agro-IA > .img-agro {
         width: 50%;
-        
     }
 
     .container > .agro-IA > .img-agro > img{
         aspect-ratio: 7/5.2;
-    
     }
- 
-       
-    
 }
 
 
 @media (max-width: 880px){
-
     /*Manteve*/
-    
     .container{
         padding: 0 8%;
         font-size: 1.8rem;
@@ -257,69 +223,47 @@ body{
         border-radius: 50px;
         aspect-ratio: 4/2.2;
         width: 100%;
-        
     }
-    
-  
     
     .container > .intro-IA > .text-intro > p{
         font-family: 'Bebas Neue', sans-serif;
-    
-        
     }
     
     .container > .intro-IA > .text-intro > .titulo-intro{
-    
         margin-bottom: 5%;
         text-align: center;
         font-size: 3rem;
         font-family: 'Bebas Neue', sans-serif;
-    
     }
-    
-    
-  
     
     .container > .func-IA > .img-func > img{
         border-radius: 50px;
         aspect-ratio: 4/2.2;
         width: 100%;
-        
-        
     }
-    
-    
     
     .container > .func-IA > .text-func > p{
         font-family: 'Bebas Neue', sans-serif;
     }
     
     .container > .func-IA > .text-func > .titulo-func{
-    
         margin-bottom: 5%;
         text-align: center;
         font-size: 2.5rem;
         font-family: 'Bebas Neue', sans-serif;
-    
     }
-    
-    
     
     .container > .agro-IA > .img-agro > img{
         border-radius: 50px;
         aspect-ratio: 4/2.2;
         width: 100%;
-        
     }
-    
     
     .container > .agro-IA > .text-agro > p{
         font-family: 'Bebas Neue', sans-serif;
-        
     }
     
     .container > .agro-IA > .text-agro > .titulo-agro{
-    
         margin-bottom: 5%;
         text-align: center;
         font-size: 2.5rem;
@@ -327,8 +271,6 @@ body{
     }
     
     /*Alterar*/
-       
-    
     .container > .intro-IA{
         display: flex;
         align-items: center;
@@ -336,13 +278,11 @@ body{
         height: 60vh;
         margin-top: 5%;
         margin-bottom: 20%;
-        
     }
     
     .container > .intro-IA > .img-intro {
         width: 100%;
         margin-bottom: 5%;
-      
     } 
 
     .container > .intro-IA > .text-intro{
@@ -351,26 +291,19 @@ body{
         width: 100%;
         padding-left: 0%;
         font-family: 'Bebas Neue', sans-serif;
-    
-        
     }
     
-    
     .container > .func-IA{
-    
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
         height: 50vh;
-    
-        
     }
     
     .container > .func-IA > .img-func {
         width: 70%;
         margin-bottom: 5%;
     }
-
 
     .container > .func-IA > .text-func{
         display: flex;
@@ -381,21 +314,17 @@ body{
         font-family: 'Bebas Neue', sans-serif;
     }
 
-    
-    
     .container > .agro-IA{
         display: flex;
         flex-direction: column;
         height: 50vh;
         margin-top: 10%;
-        margin-bottom: 10%;
-        
+        margin-bottom: 10%; 
     }
     
     .container > .agro-IA > .img-agro {
         width: 70%;
         margin-bottom: 5%;
-      
     }
 
     .container > .agro-IA > .text-agro{
@@ -405,39 +334,28 @@ body{
         padding-left: 0%;
         font-size: 1.5rem;
         font-family: 'Bebas Neue', sans-serif;
-    
-        
     }
- 
-    
-
-    
-
-    
 }
 
 @media (max-width: 480px){
+    .container > h1{
+        font-size: 4rem;
+    }
 
-    
     .container > .intro-IA{
         display: flex;
         align-items: center;
         flex-direction: column;
         height: 50vh;
         margin-top: 5%;
-        margin-bottom: 5%;
-        
+        margin-bottom: 5%; 
     }
 
-     
     .container > .func-IA{
-    
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
         height: 50vh;
-    
-        
     }
 
     .container > .agro-IA{
@@ -446,13 +364,5 @@ body{
         height: 50vh;
         margin-top: 10%;
         margin-bottom: 10%;
-        
     }
-    
-    
-
-    
-
-    
 }
-
