@@ -121,3 +121,62 @@ h1{
     max-width: 40%;
     aspect-ratio: 3/1.7;
 }
+
+@media (max-width: 1130px){
+    .intro-modelos-de-cultivo{
+        padding: 0px 60px;
+    }
+    .exemplos-de-modelos{
+        padding: 0px 60px;
+    }
+    .content p{
+        font-size: 20px;
+    }
+    .box-exemplo img{
+        width: 20rem;
+        height: 12rem;
+    }
+    .box-exemplo{
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px){
+    h1{
+        margin-bottom: 0;
+    }
+
+    .intro-modelos-de-cultivo{
+        flex-direction: column;
+    }
+    .intro-modelos-de-cultivo img{
+        max-width: 90%;
+    }
+    .intro-modelos-de-cultivo .content{
+        padding: 0;
+    }
+
+    .exemplos-de-modelos .titulo-exemplos{
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    .content p{
+        font-size: 16px;
+    }
+
+
+    .exemplos-de-modelos .box-exemplo{
+        flex-direction: column;
+    }
+    .box-exemplo .titulo{
+        margin-top: 50px;
+        font-size: 25px;
+    }
+    .box-exemplo .content{
+        padding: 0;
+    }
+    .box-exemplo img{
+        max-width: 100%;
+    }
+}
