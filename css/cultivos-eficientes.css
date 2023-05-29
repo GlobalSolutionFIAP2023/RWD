@@ -78,6 +78,10 @@ h1{
 
 
 
+.exemplos-de-modelos {
+    margin-bottom: 10%;
+}
+
 .exemplos-de-modelos .box-exemplo {
     display: flex;
     margin-top: 5%;
