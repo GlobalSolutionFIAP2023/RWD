@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/script.js" defer></script>
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/validacaoForms.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="shortcut icon" href="../img/logo-agrovida.png" type="image/x-icon">
@@ -35,17 +36,20 @@
                 <p>
                     <label for="idNome">Nome:</label>
                     <input type="text" name="nome" id="idNome" placeholder="Informe seu Nome" required>
+                    <span id="spanNome"></span>
                 </p>
                 <p>
                     <label for="idSobrenome">Sobrenome:</label>
                     <input type="text" name="sobrenome" id="idSobrenome" placeholder="Informe seu Sobrenome" required>
+                    <span id="spanSobrenome"></span>
                 </p>
                 <p>
                     <label for="idEmail">Email:</label>
                     <input type="email" name="email" id="idEmail" placeholder="Informe seu Email" required>
+                    <span id="spanEmail"></span>
                 </p>
                 <p>
-                    <label for="idEmail">Gênero:</label>
+                    <label for="idSelect">Gênero:</label>
                     <select name="cars" id="idSelect" required>
                         <option value="Masculino">Masculino</option>
                         <option value="Feminino">Feminino</option>
@@ -55,22 +59,26 @@
                 <p>
                     <label for="idTelefone">Telefone:</label>
                     <input type="text" name="telefone" id="idTelefone" placeholder="Informe seu telefone" required>
+                    <span id="spanTelefone"></span>
                 </p>
                 <p>
                     <label for="idEndereco">Endereço:</label>
                     <input type="text" name="endereco" id="idEndereco" placeholder="Informe seu Endereço" required>
+                    <span id="spanEndereco"></span>
                 </p>
                 <p>
                     <label for="idDataNasc">Data de Nascimento:</label>
-                    <input type="date" name="dataNasc" id="idDataNasc" required>
+                    <input type="date" name="dataNasc" id="idDataNasc" required min="1900-01-01" max="2020-12-31">
                 </p>
                 <p>
                     <label for="idAssunto">Assunto:</label>
                     <input type="text" name="assunto" id="idAssunto" placeholder="Informe o assunto" required>
+                    <span id="spanAssunto"></span>
                 </p>
                 <p>
                     <label for="idMensagem">Mensagem:</label>
                     <textarea name="mensagem" id="idMensagem" cols="30" rows="10" placeholder="Informe o conteúdo da mensagem" required></textarea>
+                    <span id="spanMensagem"></span>
                 </p>
                 <p>
                     <label for="idArquivo">Foto (opcional):</label>
