@@ -99,13 +99,13 @@ section .IA-generativa{
 .IA-generativa img{
     max-width: 100%;
     aspect-ratio: 3/2;
-    border: 3px solid white;
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 15px;
 }
 .IA-generativa figcaption{
     font-size: 25px;
-    color: white;
-    text-shadow: 2px 2px 1px black;
+    color: rgb(0, 0, 0);
+    
 }
 .IA-generativa button{
     width: 50%;
@@ -141,13 +141,13 @@ section .cultivo-eficiente{
 .cultivo-eficiente img{
     max-width: 100%;
     aspect-ratio: 3/2;
-    border: 3px solid white;
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 15px;
 }
 .cultivo-eficiente figcaption{
     font-size: 25px;
-    color: white;
-    text-shadow: 2px 2px 1px black;
+    color: rgb(0, 0, 0);
+    
 }
 .cultivo-eficiente button{
     width: 50%;
