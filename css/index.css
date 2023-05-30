@@ -172,7 +172,7 @@ section .cultivo-eficiente{
 }
 
 .titulo{
-    padding: 40px;
+    padding: 20px;
     font-size: 40px;
     justify-content: center;
 }
@@ -182,5 +182,9 @@ section .cultivo-eficiente{
     font-size: 21px;
     justify-content: center;
 
+}
+
+.space{
+    padding: 100px;
 }
 
