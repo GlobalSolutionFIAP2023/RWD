@@ -170,3 +170,17 @@ section .cultivo-eficiente{
     height: 40px;
     cursor: pointer;
 }
+
+.titulo{
+    padding: 40px;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.conteudoIndex{
+    padding: 40px;
+    font-size: 20px;
+    justify-content: center;
+
+}
+
