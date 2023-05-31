@@ -4,9 +4,9 @@
     align-items: center;
     justify-content: space-between;
     backdrop-filter: blur(5px);
-    border-radius: 0 10px;
-    background-color: rgba(42, 77, 29, 0.2);
+    background: rgb(0,0,0);
 }
+
 .navbar img{
     width: 70px;
     margin: 20px 0px 0px 100px;

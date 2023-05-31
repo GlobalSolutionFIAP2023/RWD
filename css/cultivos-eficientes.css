@@ -20,3 +20,163 @@ body{
 .navbar .cultivo{
     text-decoration: underline;
 }
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 5% 1% 4% 1%;
+
+    background-image: url(../img/placa.png);
+    background-size: 100%;
+    padding: 2%;
+    border-radius: 1em;
+}
+
+.intro-modelos-de-cultivo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    padding: 0px 200px;
+
+    margin: 0 1em 0 1em;
+    background-image: url(../img/placa.png);
+    background-size: 100%;
+    border-radius: 2em;
+}
+
+.intro-modelos-de-cultivo img{
+    max-width: 40%;
+    border-radius: 30px;
+}
+
+.intro-modelos-de-cultivo .content{
+    width: 100%;
+    padding-left: 50px;
+}
+
+.content .titulo-intro-modelos {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.content p {
+    font-size: 25px;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: justify;
+}
+
+
+
+.exemplos-de-modelos {
+    padding: 0px 200px;
+    margin-top: 12%;
+}
+.exemplos-de-modelos .titulo-exemplos {
+    text-align: center;
+    font-size: 45px;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', sans-serif;
+
+    background-image: url(../img/placa.png);
+    background-size: 100%;
+    padding: 2%;
+    border-radius: 1em;
+}
+
+
+
+
+.exemplos-de-modelos {
+    margin-bottom: 10%;
+}
+
+.exemplos-de-modelos .box-exemplo {
+    display: flex;
+    margin-top: 5%;
+    
+    background-image: url(../img/placa.png);
+    background-size: 100%;
+    padding: 3%;
+    border-radius: 2em;
+}
+.box-exemplo .titulo {
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 35px;
+}
+.box-exemplo .content {
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-exemplo img{
+    border-radius: 30px;
+    max-width: 40%;
+    aspect-ratio: 3/1.7;
+}
+
+@media (max-width: 1130px){
+    .intro-modelos-de-cultivo{
+        padding: 0px 60px;
+    }
+    .exemplos-de-modelos{
+        padding: 0px 60px;
+    }
+    .content p{
+        font-size: 20px;
+    }
+    .box-exemplo img{
+        width: 20rem;
+        height: 12rem;
+    }
+    .box-exemplo{
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px){
+    h1{
+        margin-bottom: 0;
+    }
+
+    .intro-modelos-de-cultivo{
+        flex-direction: column;
+    }
+    .intro-modelos-de-cultivo img{
+        max-width: 90%;
+    }
+    .intro-modelos-de-cultivo .content{
+        padding: 0;
+    }
+
+    .exemplos-de-modelos .titulo-exemplos{
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    .content p{
+        font-size: 16px;
+    }
+
+
+    .exemplos-de-modelos .box-exemplo{
+        flex-direction: column;
+    }
+    .box-exemplo .titulo{
+        margin-top: 50px;
+        font-size: 25px;
+    }
+    .box-exemplo .content{
+        padding: 0;
+    }
+    .box-exemplo img{
+        max-width: 100%;
+    }
+}
