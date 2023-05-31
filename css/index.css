@@ -145,7 +145,6 @@ section.module .p-btn-sustent{
 }
 section .p-btn-sustent button{
     width: 30%;
-    height: 45spx;
     margin-top: 3rem;
     font-size: 40px;
     cursor: pointer;
@@ -173,7 +172,6 @@ section.module .p-btn-IA{
 }
 section .p-btn-IA button{
     width: 30%;
-    height: 45spx;
     margin-top: 3rem;
     font-size: 40px;
     cursor: pointer;
@@ -201,7 +199,6 @@ section.module .p-btn-cultivo{
 }
 section .p-btn-cultivo button{
     width: 30%;
-    height: 45spx;
     margin-top: 3rem;
     font-size: 40px;
     cursor: pointer;
@@ -215,4 +212,41 @@ section .p-btn-cultivo button{
 section .p-btn-cultivo button:hover{
     transform: scale(0.98);
     transition: ease-in .3s;
+}
+
+
+
+@media (max-width:768px){
+    section.module p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 700px){
+    .wrapper #title-pag{
+        letter-spacing: 10px;
+    }
+    section.module.parallax h1{
+        font-size: 40px;
+    }
+    section .p-btn-sustent button{
+        width: 80%;
+    }
+    section .p-btn-IA button{
+        width: 80%;
+    }
+    section .p-btn-cultivo button{
+        width: 80%;
+    }
+}
+@media (max-width: 440px){
+    section .p-btn-sustent button{
+        width: 100%;
+        font-size: 1.9rem;
+    }
+    section .p-btn-IA button{
+        width: 100%;
+    }
+    section .p-btn-cultivo button{
+        width: 100%;
+    }
 }
