@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="./img/logo-agrovida.png" type="image/x-icon">
     <script src="./js/navbar.js" defer></script>
+    <script src="./js/index.js" defer></script>
     <title>AgroVida</title>
 </head>
 <body>
@@ -26,28 +28,87 @@
             </ul>
         </div>
     </header>
-    <section>
+    <div class="wrapper">
+        <main>
+            <section class="module parallax parallax-1">
+                <h1 id="title-pag">Agro Vida</h1>
+            </section>
 
-        <figure class="agricultura-sustentavel">
-            <img src="./img/Agricultura-sustentavel.jpg" alt="Imagem de agricultura sustentável">
-            <figcaption>O que é Agricultura Sustentável?</figcaption>
-            <button>Ver mais</button>
-        </figure>
-        <figure class="IA-generativa">
-            <img src="./img/IA-generativa.jpeg" alt="Imagem de IA generativa">
-            <figcaption>O que é Inteligência Artificial Generativa?</figcaption>
-            <button>Ver mais</button>
-        </figure>
-        <figure class="cultivo-eficiente">
-            <img src="./img/cultivos-eficientes.png" alt="Imagem de cultivos eficientes">
-            <figcaption>Quais são os Modelos de Cultivos Eficientes??</figcaption>
-            <button>Ver mais</button>
-        </figure>
-        
+            <section class="module content">
+                <div class="container">
+                    <h2>Nosso Objetivo</h2>
+                    <p>
+                        Criamos esse site para auxiliar na divulgação de informações sobre como a Agricultura Sustentável e Inteligências Artificiais Generativas podem contribuir para o avanço no combate à fome.
+                    </p>
+                </div>
+            </section>
 
+            <section class="module parallax parallax-2">
+                <h1>FOME NO BRASIL</h1>
+            </section>
+            <section class="module content">
+                <div class="container">
+                    <h2>Fome</h2>
+                    <p>
+                        A fome avança cada vez mais rápido pelo Brasil. Um levantamento mostra que o país soma atualmente cerca de 33,1 milhões de pessoas sem ter o que comer diariamente, quase o dobro do contingente em situação de fome estimado em 2020.
+                    </p>
+                    <p>
+                        Em números absolutos, são 14 milhões de pessoas a mais passando fome no país.
+                    </p>
+                    <p>
+                        Essa situação pode ser amenizada com ajuda de Inteligências Artificiais Generativas no campo, que contribuem para o aumento da sustentabilidade da produção agrícola, aumentando a quantidade de alimento, consequentemente, barateando o preço, tornando-se mais acessível ao povo.
+                    </p>
+                </div>
+            </section>
 
+            <section class="module parallax parallax-3">
+                <h1>Sustentabilidade</h1>
+            </section>
+            <section class="module content">
+                <div class="container">
+                    <h2></h2>
+                    <p>
+                        Além do alto custo econômico de sua manutenção, a exploração excessiva da base dos recursos naturais levou a crescentes níveis de degradação e esgotamento dos solos, poluição das águas, intoxicações e contaminações de agricultores por agrotóxicos, além de perda de biodiversidade.
+                    </p>
+                    <p class="p-btn-sustent">
+                        Saiba como ajudar a manter a Sustentabilidade na Agricultura
+                        <button id="sustentabilidade">Sustentabilidade Agrícola</button>
+                    </p>
+                </div>
+            </section>
 
-    </section>
+            <section class="module parallax parallax-4">
+                <h1>Inteligência Artificial Generativa</h1>
+            </section>
+            <section class="module content">
+                <div class="container">
+                    <h2></h2>
+                    <p>
+                        A Inteligência Artificial (IA) Generativa é uma tecnologia vital na agricultura digital de hoje que está sendo implementada e implantada em grande escala para um uso mais sustentável dos recursos disponíveis.
+                    </p>
+                    <p class="p-btn-IA">
+                        <button id="IA">Saiba Mais</button>
+                    </p>
+                </div>
+            </section>
+
+            <section class="module parallax parallax-5">
+                <h1>Modelos de Cultivos Eficiêntes</h1>
+            </section>
+            <section class="module content">
+                <div class="container">
+                    <h2></h2>
+                    <p>
+                        Modelos de cultivos eficiêntes ajudam você a ter um plantio mais satisfatório, produzindo mais em menos tempo, utilizando menos espaço.
+                    </p>
+                    <p class="p-btn-cultivo">
+                        <button id="cultivo">Saiba Mais</button>
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+    
     <footer>
         <ul>
             <li class="item-person">Carlos Eduardo - RM552164</li>
@@ -62,7 +123,5 @@
             <div class="social-media-item twitter"><ion-icon name="logo-twitter" id="twitter"></ion-icon></div>
         </div>
     </footer>
-
-
 </body>
 </html>
