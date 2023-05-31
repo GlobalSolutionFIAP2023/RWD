@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Concert+One&family=Share+Tech&display=swap');
 @import url(./navbar.css);
 @import url(./footer.css);
 
@@ -9,45 +10,72 @@
     font-family: 'Concert One';
 }
 
-body{
-    background-image: url(../img/foto-contato.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
 .navbar .contato{
     text-decoration: underline;
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
+    background-image: url(../img/contato-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    backdrop-filter: blur(6px);
+    overflow-y: hidden;
 }
+
+h1{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: -7rem;
+    text-transform: uppercase;
+    color: white;
+    font-size: 70px;
+    letter-spacing: 10px;
+    font-family: 'Bebas Neue';
+}
+
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+    width: 100vw;
+}
+
+
+
+.campo-0{
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+.campo-0 img{
+    width: 100%;
+}
+.campo-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    padding: 0 30px;
+}
+.campo-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    padding: 0 30px;
+}
+
 
 
 
 fieldset{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     border: none;
-    background-color: rgba(0, 0, 0, 0.222);
-    border-radius: 15px;
-    padding: 0px 25px;
-    margin: 0px 20px;
+    outline: none;
 }
-
-fieldset legend{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    text-decoration: underline;
-}
-
 fieldset p{
     width: 100%;
     margin: 20px 0px;
@@ -65,7 +93,12 @@ fieldset input{
     border-bottom: 2px solid white;
     background-color: rgba(255, 255, 255, 0.805);
     padding: 0 10px;
+    transition: all .3s;
 }
+fieldset input:hover{
+    transform: scale(0.98);
+}
+
 fieldset select{
     width: 100%;
     border: none;
@@ -103,3 +136,34 @@ fieldset input[type="submit"]:hover{
 }
 
 
+@media (max-width: 1400px){
+    h1{
+        margin-bottom: -1rem;
+    }
+    form{
+        padding: 4rem 0;
+        flex-direction: column;
+        height: auto;
+    }
+    fieldset p{
+        margin: 5px 0;
+    }
+    body{
+        overflow-y: visible;
+    }
+    .campo-0 img{
+        width: 200px;
+    }
+}
+
+@media (max-width: 616px){
+    fieldset p{
+        width: 100%;
+    }
+    .campo-1{
+        width: 75%;
+    }
+    .campo-2{
+        width: 75%;
+    }
+}

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Concert+One&family=Share+Tech&display=swap');
 @import url(./navbar.css);
 @import url(./footer.css);
 
@@ -10,11 +11,12 @@
 }
 
 body{
-    background-image: url(../img/background-agrovida.jpg);
+    background-image: url(../img/background-cultivo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: top;
+    backdrop-filter: blur(6px);
 }
 
 .navbar .cultivo{
@@ -23,17 +25,17 @@ body{
 
 h1{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 8rem;
     color: #fff;
-    text-decoration: underline;
     font-family: 'Bebas Neue', sans-serif;
-    margin: 5% 1% 4% 1%;
-
-    background-image: url(../img/placa.png);
-    background-size: 100%;
-    padding: 2%;
-    border-radius: 1em;
+    margin-top: 15%;
+    margin-bottom: 22%;
+    background: linear-gradient(90deg, #190035 0%, #3cff00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.271);
 }
+
 
 .intro-modelos-de-cultivo {
     display: flex;
@@ -41,11 +43,6 @@ h1{
     align-items: center;
     height: 60vh;
     padding: 0px 200px;
-
-    margin: 0 1em 0 1em;
-    background-image: url(../img/placa.png);
-    background-size: 100%;
-    border-radius: 2em;
 }
 
 .intro-modelos-de-cultivo img{
@@ -59,13 +56,13 @@ h1{
 }
 
 .content .titulo-intro-modelos {
-    font-size: 35px;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 5%;
 }
 
 .content p {
-    font-size: 25px;
+    font-size: 35px;
     color: white;
     font-family: 'Bebas Neue', sans-serif;
     text-align: justify;
@@ -79,14 +76,9 @@ h1{
 }
 .exemplos-de-modelos .titulo-exemplos {
     text-align: center;
-    font-size: 45px;
+    font-size: 60px;
     text-decoration: underline;
     font-family: 'Bebas Neue', sans-serif;
-
-    background-image: url(../img/placa.png);
-    background-size: 100%;
-    padding: 2%;
-    border-radius: 1em;
 }
 
 
@@ -95,20 +87,16 @@ h1{
 .exemplos-de-modelos {
     margin-bottom: 10%;
 }
-
 .exemplos-de-modelos .box-exemplo {
     display: flex;
     margin-top: 5%;
-    
-    background-image: url(../img/placa.png);
-    background-size: 100%;
     padding: 3%;
-    border-radius: 2em;
 }
 .box-exemplo .titulo {
     margin-bottom: 5%;
     text-align: center;
-    font-size: 35px;
+    font-size: 55px;
+    color: wheat;
 }
 .box-exemplo .content {
     padding-right: 50px;
@@ -121,6 +109,9 @@ h1{
     max-width: 40%;
     aspect-ratio: 3/1.7;
 }
+
+
+
 
 @media (max-width: 1130px){
     .intro-modelos-de-cultivo{
@@ -144,8 +135,8 @@ h1{
 @media (max-width: 768px){
     h1{
         margin-bottom: 0;
+        font-size: 80px;
     }
-
     .intro-modelos-de-cultivo{
         flex-direction: column;
     }
@@ -155,17 +146,13 @@ h1{
     .intro-modelos-de-cultivo .content{
         padding: 0;
     }
-
     .exemplos-de-modelos .titulo-exemplos{
         font-size: 30px;
         margin-top: 100px;
     }
-
     .content p{
         font-size: 16px;
     }
-
-
     .exemplos-de-modelos .box-exemplo{
         flex-direction: column;
     }
@@ -178,5 +165,19 @@ h1{
     }
     .box-exemplo img{
         max-width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 50px;
+    }
+    .intro-modelos-de-cultivo{
+        padding: 0 20px;
+        margin: 0;
+    }
+    .box-exemplo .titulo{
+        margin-top: 10px;
+        font-size: 25px;
     }
 }
