@@ -55,3 +55,10 @@ function verifEmail(valor){
         }
     }
 }
+
+dataNascimento = document.querySelector("#idDataNasc");
+dataNascimento.addEventListener("blur", ()=>{
+    if(dataNascimento.value == ""){
+        alert("Preencha a data de nascimento!");
+    }
+})
