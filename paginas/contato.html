@@ -30,7 +30,7 @@
 
     <h1>Contato</h1>
 
-    <form action="" method="post">
+    <form action="" method="get">
 
         <fieldset class="campo-0">
             <img src="../img/vetor-cadastro.png" alt="Imagem de cadastro">
@@ -39,22 +39,22 @@
         <fieldset class="campo-1">
             <p>
                 <label for="idNome">Nome:</label>
-                <input type="text" name="nome" id="idNome" placeholder="Informe seu Nome" required>
+                <input type="text" name="nome" id="idNome" placeholder="Informe seu Nome">
                 <span id="spanNome"></span>
             </p>
             <p>
                 <label for="idSobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="idSobrenome" placeholder="Informe seu Sobrenome" required>
+                <input type="text" name="sobrenome" id="idSobrenome" placeholder="Informe seu Sobrenome">
                 <span id="spanSobrenome"></span>
             </p>
             <p>
                 <label for="idEmail">Email:</label>
-                <input type="email" name="email" id="idEmail" placeholder="Informe seu Email" required>
+                <input type="email" name="email" id="idEmail" placeholder="Informe seu Email">
                 <span id="spanEmail"></span>
             </p>
             <p>
                 <label for="idSelect">Gênero:</label>
-                <select name="cars" id="idSelect" required>
+                <select name="cars" id="idSelect" value="option">
                     <option value="Masculino">Masculino</option>
                     <option value="Feminino">Feminino</option>
                     <option value="Nenhum">Nenhum</option>
@@ -62,12 +62,12 @@
             </p>
             <p>
                 <label for="idTelefone">Telefone:</label>
-                <input type="text" name="telefone" id="idTelefone" placeholder="Informe seu telefone" required>
+                <input type="text" name="telefone" id="idTelefone" placeholder="Informe seu telefone">
                 <span id="spanTelefone"></span>
             </p>
             <p>
                 <label for="idEndereco">Endereço:</label>
-                <input type="text" name="endereco" id="idEndereco" placeholder="Informe seu Endereço" required>
+                <input type="text" name="endereco" id="idEndereco" placeholder="Informe seu Endereço">
                 <span id="spanEndereco"></span>
             </p>
         </fieldset>
@@ -75,24 +75,25 @@
         <fieldset class="campo-2">
             <p>
                 <label for="idDataNasc">Data de Nascimento:</label>
-                <input type="date" name="dataNasc" id="idDataNasc" required min="1900-01-01" max="2020-12-31">
+                <input type="date" name="dataNasc" id="idDataNasc" min="1900-01-01" max="2020-12-31">
             </p>
             <p>
                 <label for="idAssunto">Assunto:</label>
-                <input type="text" name="assunto" id="idAssunto" placeholder="Informe o assunto" required>
+                <input type="text" name="assunto" id="idAssunto" placeholder="Informe o assunto">
                 <span id="spanAssunto"></span>
             </p>
             <p>
                 <label for="idMensagem">Mensagem:</label>
-                <textarea name="mensagem" id="idMensagem" cols="30" rows="10" placeholder="Informe o conteúdo da mensagem" required></textarea>
+                <textarea name="mensagem" id="idMensagem" cols="30" rows="10" placeholder="Informe o conteúdo da mensagem"></textarea>
                 <span id="spanMensagem"></span>
             </p>
             <p>
-                <label for="idArquivo">Foto (opcional):</label>
-                <input type="file" name="arquivo" id="idArquivo">
+                <label for="idFoto">Foto (opcional):</label>
+                <input type="file" id="inputImg" onchange="imgURL()">
+                <img src="" height="200" id="previewFoto" alt="Prévia da imagem...">
             </p>
             <p>
-                <input type="submit" value="Enviar">
+                <input type="submit" id="btnEnviar" onclick="setItemLocalStorage()" value="Enviar">
             </p>
         </fieldset>
     </form>
