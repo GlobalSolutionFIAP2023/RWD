@@ -21,13 +21,12 @@ body{
     background-attachment: fixed;
     background-position: center;
     backdrop-filter: blur(6px);
-    overflow-x: hidden;
+    backdrop-filter: brightness(0.3);
 }
 
 h1{
     text-align: center;
     margin-top: 3rem;
-    margin-bottom: -7rem;
     text-transform: uppercase;
     color: white;
     font-size: 70px;
@@ -41,37 +40,11 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
 }
 
 span{
     color: white;
 }
-
-.campo-0{
-    display: flex;
-    align-items: center;
-    width: 15%;
-}
-.campo-0 img{
-    width: 100%;
-}
-.campo-1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 35%;
-    padding: 0 30px;
-}
-.campo-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 35%;
-    padding: 0 30px;
-}
-
-
 
 
 fieldset{
@@ -92,7 +65,7 @@ fieldset input{
     border: none;
     border-radius: 6px;
     outline: none;
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid rgb(3, 143, 45);
     background-color: rgba(255, 255, 255, 0.805);
     padding: 0 10px;
     transition: all .3s;
@@ -129,12 +102,25 @@ fieldset input[type="submit"]{
     background-color: antiquewhite;
     font-size: 20px;
     height: 45px;
+    margin-bottom: 30px;
     transition: ease-out .3s;
 }
 fieldset input[type="submit"]:hover{
     transform: scale(1.02);
     transition: ease-in .3s;
     letter-spacing: 2px;
+}
+
+
+fieldset #previewFoto{
+    display: none;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    margin-left: 28%;
+    border: none;
+    outline: none;
 }
 
 
@@ -153,19 +139,19 @@ fieldset input[type="submit"]:hover{
     body{
         overflow-y: visible;
     }
-    .campo-0 img{
-        width: 200px;
-    }
 }
 
-@media (max-width: 616px){
+@media (max-width: 916px){
     fieldset p{
         width: 100%;
     }
-    .campo-1{
-        width: 75%;
+}
+
+@media (max-width: 550px){
+    fieldset p{
+        width: 250px;
     }
-    .campo-2{
-        width: 75%;
+    fieldset #previewFoto{
+        margin-left: 12%;
     }
 }

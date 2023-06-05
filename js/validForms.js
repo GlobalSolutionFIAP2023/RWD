@@ -66,7 +66,7 @@ function verifData(){
 const nome = document.querySelector("#idNome");
 const spanNome = document.querySelector("#spanNome");
 nome.addEventListener("blur", (evento)=>{
-    let retorno = verifMin(nome.value.length)
+    let retorno = verifMin(nome.value.length);
     spanNome.innerText = retorno;
     if(retorno != "Campo Nulo!" && retorno != "Conteúdo menor que 5 caracteres!"){
         spanNome.style.visibility = "hidden";
@@ -79,7 +79,7 @@ nome.addEventListener("blur", (evento)=>{
 const sobrenome = document.querySelector("#idSobrenome");
 const spanSobrenome = document.querySelector("#spanSobrenome");
 sobrenome.addEventListener("blur", (evento)=>{
-    retorno = verifMin(sobrenome.value.length)
+    retorno = verifMin(sobrenome.value.length);
     spanSobrenome.innerText = retorno;
     if(retorno != "Campo Nulo!" && retorno != "Conteúdo menor que 5 caracteres!"){
         spanSobrenome.style.visibility = "hidden";
@@ -121,6 +121,34 @@ telefone.addEventListener("blur", (evento)=>{
         spanTelefone.style.visibility = "visible";
     }
 })
+
+function mascaraTelefone(parametro){
+    let valorTelefone = parametro.value;
+
+    if(valorTelefone.length > 1){
+        ddd = valorTelefone.slice(0,2);
+        
+        if(valorTelefone.length > 2){
+            cel = valorTelefone.slice(2,3);
+
+            if(valorTelefone.length > 6){
+                numPart1 = valorTelefone.slice(3,7);
+
+                if(valorTelefone.length > 9){
+                    numPart2 = valorTelefone.slice(7,11);
+                    
+                    telefoneAjustado = "(" + ddd + ") " + cel + " " + numPart1 + "-" + numPart2;
+                    telefone.value = telefoneAjustado;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
 
 const endereco = document.querySelector("#idEndereco");
 const spanEndereco = document.querySelector("#spanEndereco");
@@ -205,6 +233,8 @@ function imgURL(){
     fr.addEventListener('load', ()=>{
         const url = fr.result;
         img.src = url;
+        img.alt = "Preview da imagem";
+        img.setAttribute("style", "display: flex;");
         localStorage.setItem("img", url);
     });
 }
