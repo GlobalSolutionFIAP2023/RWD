@@ -40,28 +40,6 @@ function verifData(){
     }
 }
 
-// Variável que recebe inputs do formulario, armazenandno em um array
-// const SomeInputs = document.querySelectorAll("input");
-// // for para percorrer o array de inputs
-// for (let i = 0; i < 9; i++){
-//     SomeInputs[i].addEventListener('blur', (evento)=>{
-//         //Se o target.id == idNome, idSobrenome, idEmail, idTelefone, idEndereco, idAssunto
-//         if(evento.target.id == "idNome" || 
-//             evento.target.id == "idSobrenome" || 
-//             evento.target.id == "idEmail" || 
-//             evento.target.id == "idTelefone" || 
-//             evento.target.id == "idEndereco" || 
-//             evento.target.id == "idAssunto"){
-                
-//             verifMin(SomeInputs[i].value.length); //executa a função verifMin passando o tamanho do valor do input como parametro
-//         }
-
-//         //Se o target.id == idEmail
-//         if(evento.target.id == "idEmail"){
-//             verifEmail(SomeInputs[i].value); //executa a função verifEmail passando o valor do input como parametro
-//         }
-//     });
-// }
 
 const nome = document.querySelector("#idNome");
 const spanNome = document.querySelector("#spanNome");
@@ -228,13 +206,18 @@ function imgURL(){
     const file = document.querySelector("#inputImg");
     const fr = new FileReader();
     const img = document.querySelector("#previewFoto");
+    const botaoEnviar = document.querySelector("#btnEnviar");
+    const fieldset = document.querySelector("fieldset");
 
     fr.readAsDataURL(file.files[0]);
     fr.addEventListener('load', ()=>{
         const url = fr.result;
         img.src = url;
         img.alt = "Preview da imagem";
+        botaoEnviar.setAttribute("style", "margin-top: 230px;");
+        fieldset.setAttribute("style", "height: 150vh;");
         img.setAttribute("style", "display: flex;");
+        
         localStorage.setItem("img", url);
     });
 }
