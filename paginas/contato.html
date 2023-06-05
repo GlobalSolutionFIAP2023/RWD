@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../js/navbar.js" defer></script>
-    <script src="../js/validacaoForms.js" defer></script>
+    <script src="../js/footer.js" defer></script>
+    <script src="../js/validForms.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="shortcut icon" href="../img/logo-agrovida.png" type="image/x-icon">
@@ -28,69 +29,83 @@
         </div>
     </header>
 
-    <section>
+    
 
-        <form action="" method="post">
-            <fieldset>
-                <legend>Contato:</legend>
-                <p>
-                    <label for="idNome">Nome:</label>
-                    <input type="text" name="nome" id="idNome" placeholder="Informe seu Nome" required>
-                    <span id="spanNome"></span>
-                </p>
-                <p>
-                    <label for="idSobrenome">Sobrenome:</label>
-                    <input type="text" name="sobrenome" id="idSobrenome" placeholder="Informe seu Sobrenome" required>
-                    <span id="spanSobrenome"></span>
-                </p>
-                <p>
-                    <label for="idEmail">Email:</label>
-                    <input type="email" name="email" id="idEmail" placeholder="Informe seu Email" required>
-                    <span id="spanEmail"></span>
-                </p>
-                <p>
-                    <label for="idSelect">Gênero:</label>
-                    <select name="cars" id="idSelect" required>
-                        <option value="Masculino">Masculino</option>
-                        <option value="Feminino">Feminino</option>
-                        <option value="Nenhum">Nenhum</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="idTelefone">Telefone:</label>
-                    <input type="text" name="telefone" id="idTelefone" placeholder="Informe seu telefone" required>
-                    <span id="spanTelefone"></span>
-                </p>
-                <p>
-                    <label for="idEndereco">Endereço:</label>
-                    <input type="text" name="endereco" id="idEndereco" placeholder="Informe seu Endereço" required>
-                    <span id="spanEndereco"></span>
-                </p>
-                <p>
-                    <label for="idDataNasc">Data de Nascimento:</label>
-                    <input type="date" name="dataNasc" id="idDataNasc" required min="1900-01-01" max="2020-12-31">
-                </p>
-                <p>
-                    <label for="idAssunto">Assunto:</label>
-                    <input type="text" name="assunto" id="idAssunto" placeholder="Informe o assunto" required>
-                    <span id="spanAssunto"></span>
-                </p>
-                <p>
-                    <label for="idMensagem">Mensagem:</label>
-                    <textarea name="mensagem" id="idMensagem" cols="30" rows="10" placeholder="Informe o conteúdo da mensagem" required></textarea>
-                    <span id="spanMensagem"></span>
-                </p>
-                <p>
-                    <label for="idArquivo">Foto (opcional):</label>
-                    <input type="file" name="arquivo" id="idArquivo">
-                </p>
-                <p>
-                    <input type="submit" value="Enviar">
-                </p>
-            </fieldset>
-        </form>
-        
-    </section>
+    <form action="" method="get">
+        <fieldset>
+            <h1>Contato</h1>
+            <p>
+                <label for="idNome">Nome:</label>
+                <input type="text" name="nome" id="idNome" placeholder="Informe seu Nome" maxlength="100">
+                <span id="spanNome"></span>
+            </p>
+            <p>
+                <label for="idSobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="idSobrenome" placeholder="Informe seu Sobrenome" maxlength="150">
+                <span id="spanSobrenome"></span>
+            </p>
+            <p>
+                <label for="idEmail">Email:</label>
+                <input type="email" name="email" id="idEmail" placeholder="Informe seu Email" maxlength="100">
+                <span id="spanEmail"></span>
+            </p>
+            <p>
+                <label for="idSelect">Gênero:</label>
+                <select name="cars" id="idSelect" value="option">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Nenhum">Nenhum</option>
+                </select>
+            </p>
+            <p>
+                <label for="idTelefone">Telefone:</label>
+                <input type="text" name="telefone" id="idTelefone" placeholder="Informe seu telefone" onkeypress="mascaraTelefone(this)" maxlength="15">
+                <span id="spanTelefone"></span>
+            </p>
+            <p>
+                <label for="idEndereco">Endereço:</label>
+                <input type="text" name="endereco" id="idEndereco" placeholder="Informe seu Endereço" maxlength="150">
+                <span id="spanEndereco"></span>
+            </p>
+            <p>
+                <label for="idDataNasc">Data de Nascimento:</label>
+                <input type="date" name="dataNasc" id="idDataNasc" min="1900-01-01" max="2020-12-31">
+                <span id="spanDataNasc"></span>
+            </p>
+            <p>
+                <label for="idAssunto">Assunto:</label>
+                <input type="text" name="assunto" id="idAssunto" placeholder="Informe o assunto">
+                <span id="spanAssunto"></span>
+            </p>
+            <p>
+                <label for="idMensagem">Mensagem:</label>
+                <textarea name="mensagem" id="idMensagem" cols="30" rows="10" placeholder="Informe o conteúdo da mensagem"></textarea>
+                <span id="spanMensagem"></span>
+            </p>
+            <p>
+                <label for="idFoto">Foto (opcional):</label>
+                <input type="file" id="inputImg" onchange="imgURL()">
+                <img src="" height="200" id="previewFoto" alt="">
+            </p>
+            <p>
+                <input type="submit" id="btnEnviar" onclick="setItemLocalStorage()" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+    <footer>
+        <ul>
+            <li class="item-person">Carlos Eduardo - RM552164</li>
+            <li class="item-person">Eduardo Toshio - RM551763</li>
+            <li class="item-person">Kauê Alexandre - RM551812</li>
+            <li class="item-person">Mateus Vinicius - RM551692</li>
+            <li class="item-person">Vitor Machado - RM551451</li>
+        </ul>
+        <div class="social-media">
+            <div class="social-media-item instagram"><ion-icon name="logo-instagram" id="instagram"></ion-icon></div>
+            <div class="social-media-item facebook"><ion-icon name="logo-facebook" id="facebook"></ion-icon></div>
+            <div class="social-media-item twitter"><ion-icon name="logo-twitter" id="twitter"></ion-icon></div>
+        </div>
+    </footer>
 
 </body>
 </html>

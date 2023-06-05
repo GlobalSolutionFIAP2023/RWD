@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="./img/logo-agrovida.png" type="image/x-icon">
+    <script src="./js/footer.js" defer></script>
     <script src="./js/navbar.js" defer></script>
+    <script src="./js/index.js" defer></script>
     <title>AgroVida</title>
 </head>
 <body>
@@ -26,34 +29,70 @@
             </ul>
         </div>
     </header>
-    <section>
+    <div class="wrapper">
+        <main>
+            <section class="module parallax parallax-1">
+                <h1 id="title-pag">Agro Vida</h1>
+            </section>
 
-        <figure class="agricultura-sustentavel">
-            <img src="./img/Agricultura-sustentavel.jpg" alt="Imagem de agricultura sustentável">
-            <figcaption>O que é Agricultura Sustentável? <br></figcaption>
-            <button>Ver mais</button>
-        </figure>
-        <figure class="IA-generativa">
-            <img src="./img/IA-generativa.jpeg" alt="Imagem de IA generativa">
-            <figcaption>O que é Inteligência Artificial Generativa?</figcaption>
-            <button>Ver mais</button>
-        </figure>
-        <figure class="cultivo-eficiente">
-            <img src="./img/cultivos-eficientes.png" alt="Imagem de cultivos eficientes">
-            <figcaption>Quais são os Modelos de Cultivos Eficientes?</figcaption>
-            <button>Ver mais</button>
-        </figure>
-        
+            <section class="module content">
+                <div class="container">
+                    <h2>Nosso Objetivo</h2>
+                    <p>
+                        Criamos esse site para auxiliar na divulgação de informações sobre como a Agricultura Sustentável e Inteligências Artificiais Generativas podem contribuir para o avanço no combate à fome.
+                    </p>
+                </div>
+            </section>
 
-        
+            <section class="module parallax parallax-2">
+                <h1>FOME NO BRASIL</h1>
+            </section>
+            <section class="module content">
+                <div class="container">
+                    <h2>Fome</h2>
+                    <p>
+                        Um levantamento mostra que o país soma atualmente cerca de 33,1 milhões de pessoas sem ter o que comer diariamente.
+                    </p>
+                    <p>
+                        Essa situação pode ser amenizada com ajuda de IA Generativa, contribuindo no aumento da quantidade de alimento e barateando o preço.
+                    </p>
+                </div>
+            </section>
 
 
+            <section class="module parallax parallax-4">
+                <h1>Inteligência Artificial Generativa</h1>
+            </section>
+            <section class="module content">
+                <div class="container">
+                    <h2></h2>
+                    <p>
+                        A Inteligência Artificial (IA) Generativa é uma tecnologia que está sendo implantada para um uso mais sustentável dos recursos disponíveis.
+                    </p>
+                    <p class="p-btn-IA">
+                        <button id="IA">Saiba Mais</button>
+                    </p>
+                </div>
+            </section>
 
-    </section>
-    <h1 class="titulo">Sobre a agricultura</h1>
-        <p class="conteudoIndex">A agricultura desempenha um papel fundamental na sociedade e é considerada uma das atividades mais importantes para a humanidade. Ela abrange a produção de alimentos, fibras, biocombustíveis e uma ampla gama de produtos vegetais e animais que são essenciais para a subsistência e o desenvolvimento das comunidades.Ela é responsável por fornecer alimentos para a população global. Com o crescimento da população mundial, é crucial garantir que haja produção suficiente de alimentos para suprir a demanda crescente. A agricultura moderna utiliza técnicas avançadas para aumentar a produtividade e a eficiência, garantindo assim a segurança alimentar. As chamadas práticas agrícolas sustentáveis ​​visam minimizar o impacto negativo no meio ambiente, utilizando técnicas de conservação do solo, gestão adequada dos recursos hídricos, redução do uso de produtos químicos e adoção de métodos de cultivo sustentáveis.A Agro Vida te convida a aprender mais sobre agricultura lendo nossas páginas de conteúdo!</p>
-        <p class="space"></p>    
-        <footer>
+            <section class="module parallax parallax-5">
+                <h1>Modelos de Cultivos Eficientes</h1>
+            </section>
+            <section class="module content">
+                <div class="container">
+                    <h2></h2>
+                    <p>
+                        Modelos de cultivos eficientes ajudam você a ter um plantio mais satisfatório, produzindo mais em menos tempo, utilizando menos espaço.
+                    </p>
+                    <p class="p-btn-cultivo">
+                        <button id="cultivo">Saiba Mais</button>
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
         <ul>
             <li class="item-person">Carlos Eduardo - RM552164</li>
             <li class="item-person">Eduardo Toshio - RM551763</li>
@@ -67,7 +106,5 @@
             <div class="social-media-item twitter"><ion-icon name="logo-twitter" id="twitter"></ion-icon></div>
         </div>
     </footer>
-
-
 </body>
 </html>
