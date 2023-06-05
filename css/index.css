@@ -146,6 +146,7 @@ section.module .p-btn-sustent{
 section .p-btn-sustent button{
     width: 30%;
     margin-top: 3rem;
+    height: auto;
     font-size: 40px;
     cursor: pointer;
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(147,67,67,1) 0%, rgba(111,27,27,1) 90% );
@@ -172,6 +173,7 @@ section.module .p-btn-IA{
 }
 section .p-btn-IA button{
     width: 30%;
+    height: auto;
     margin-top: 3rem;
     font-size: 40px;
     cursor: pointer;
@@ -197,13 +199,21 @@ section.module .p-btn-cultivo{
     flex-direction: column;
     align-items: center;
 }
-section .p-btn-cultivo button{
-    width: 30%;
-    margin-top: 3rem;
-    font-size: 40px;
-    cursor: pointer;
-    background-image: radial-gradient( circle 759px at -6.7% 50%,  rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
-    color: rgb(255, 255, 255);
+.cultivo-eficiente img{
+    max-width: 100%;
+    aspect-ratio: 3/2;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+.cultivo-eficiente figcaption{
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+.cultivo-eficiente button{
+    width: 50%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.173);
     border: none;
     border-radius: 6px;
     box-shadow: 1px 1px 20px rgb(121, 121, 121);
@@ -250,3 +260,21 @@ section .p-btn-cultivo button:hover{
         width: 100%;
     }
 }
+
+.titulo{
+    padding: 20px;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.conteudoIndex{
+    
+    font-size: 20px;
+    justify-content: center;
+    
+}
+
+.space{
+    padding: 100px;
+}
+
