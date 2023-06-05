@@ -146,6 +146,7 @@ section.module .p-btn-sustent{
 section .p-btn-sustent button{
     width: 30%;
     margin-top: 3rem;
+    height: auto;
     font-size: 40px;
     cursor: pointer;
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(147,67,67,1) 0%, rgba(111,27,27,1) 90% );
@@ -172,6 +173,7 @@ section.module .p-btn-IA{
 }
 section .p-btn-IA button{
     width: 30%;
+    height: auto;
     margin-top: 3rem;
     font-size: 40px;
     cursor: pointer;
@@ -210,6 +212,7 @@ section.module .p-btn-cultivo{
 }
 .cultivo-eficiente button{
     width: 50%;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.173);
     border: none;
     border-radius: 6px;
