@@ -31,6 +31,10 @@
     transition: all .3s;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 
 @media (max-width: 1130px) {

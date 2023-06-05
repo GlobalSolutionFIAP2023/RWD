@@ -145,9 +145,9 @@ section.module .p-btn-sustent{
 }
 section .p-btn-sustent button{
     width: 30%;
-    height: auto;
+    height: 70px;
     margin-top: 3rem;
-    font-size: 40px;
+    font-size: 23px;
     cursor: pointer;
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(147,67,67,1) 0%, rgba(111,27,27,1) 90% );
     color: white;
@@ -173,9 +173,9 @@ section.module .p-btn-IA{
 }
 section .p-btn-IA button{
     width: 30%;
-    height: auto;
+    height: 70px;
     margin-top: 3rem;
-    font-size: 40px;
+    font-size: 23px;
     cursor: pointer;
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
     color: rgb(255, 255, 255);
@@ -201,9 +201,9 @@ section.module .p-btn-cultivo{
 }
 section .p-btn-cultivo button{
     width: 30%;
-    height: auto;
+    height: 70px;
     margin-top: 3rem;
-    font-size: 40px;
+    font-size: 23px;
     cursor: pointer;
     background-image: radial-gradient( circle 759px at -6.7% 50%,  rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
     color: rgb(255, 255, 255);

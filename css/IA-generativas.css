@@ -84,7 +84,6 @@ body{
 .container > .func-IA{
     display: flex;
     align-items: center;
-    height: 60vh;
     margin-top: 5%;
 }
 .container > .func-IA > .img-func {
@@ -162,7 +161,6 @@ body{
     .container > .intro-IA {
        margin: 0;
        padding: 0;
-       height: 50vh;
     }  
 
     .container > .intro-IA > .img-intro {
@@ -177,7 +175,6 @@ body{
     .container > .func-IA {
         margin: 0;
         padding: 0;
-        height: 50vh;
     }  
     
     .container > .func-IA > .img-func {
@@ -191,7 +188,6 @@ body{
     .container > .agro-IA {
         margin: 0;
         padding: 0;
-        height: 50vh;
     }  
     
     .container > .agro-IA > .img-agro {
@@ -277,7 +273,6 @@ body{
         display: flex;
         align-items: center;
         flex-direction: column;
-        height: 45vh;
         margin-top: 5%;
         margin-bottom: 20%;
     }
@@ -319,7 +314,6 @@ body{
     .container > .agro-IA{
         display: flex;
         flex-direction: column;
-        height: 60vh;
         margin-top: 35%;
         margin-bottom: 10%; 
     }
@@ -347,7 +341,6 @@ body{
         display: flex;
         align-items: center;
         flex-direction: column;
-        height: 50vh;
         margin-top: 5%;
         margin-bottom: 5%; 
     }
