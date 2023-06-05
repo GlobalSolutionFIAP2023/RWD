@@ -1,7 +1,7 @@
 footer{
     width: 100%;
     height: 50px;
-    background-color: rgba(1, 169, 96, 0.922);
+    background-color: rgb(0, 73, 41);
 }
 footer ul{
     display: flex;
@@ -18,12 +18,10 @@ footer .item-person{
 
 footer .social-media{
     display: flex;
-    height: 50px;
+    height: 70px;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.206);
-    background-color: rgba(255, 255, 255, 0.608);
-    height: 140%;
+    background-color: rgb(0, 3, 18);
 }
 
 
@@ -96,9 +94,8 @@ footer #twitter:hover{
 @media (max-width: 1130px) {
     footer{
         width: 100%;
-        margin-top: 5%;
+        padding-top: 1%;
         height: 150px;
-        background-color: rgba(1, 169, 96, 0.922);
         font-size: 1.5rem;
     }
 
@@ -106,8 +103,6 @@ footer #twitter:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.206);
-        background-color: rgba(255, 255, 255, 0.608);
         height: 110%;
     }
 
@@ -188,9 +183,8 @@ footer #twitter:hover{
 @media (max-width: 480px){
     footer{
         width: 100%;
-        margin-top: 5%;
+        padding-bottom: 2%;
         height: 180px;
-        background-color: rgba(1, 169, 96, 0.922);
         font-size: 1.5rem;
     }
 
@@ -198,8 +192,6 @@ footer #twitter:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.206);
-        background-color: rgba(255, 255, 255, 0.608);
         height: 90%;
     }
     

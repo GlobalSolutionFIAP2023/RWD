@@ -17,6 +17,7 @@ body{
     background-attachment: fixed;
     background-position: top;
     backdrop-filter: blur(5px);
+    backdrop-filter: brightness(0.3);
 }
 
 .navbar .agricultura{
@@ -309,7 +310,7 @@ h1{
     }
 
     .content p{
-        font-size: 19px;
+        font-size: 25px;
     }
 
 
@@ -399,5 +400,11 @@ h1{
     }
     .eficiencia-agricola .titulo-eficiencia{
         font-size: 28px;
+    }
+}
+
+@media (max-width: 425px) {
+    .content p{
+        font-size: 18px;
     }
 }

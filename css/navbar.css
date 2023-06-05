@@ -57,7 +57,12 @@
     }
     .navbar .nav-item{
         margin: 5px 0px;
-        font-size: 20px;
+        font-size: 30px;
     }
-    
+}
+
+@media (max-width: 500px){
+    .navbar .nav-item{
+        font-size: 18px;
+    }
 }

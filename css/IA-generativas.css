@@ -17,6 +17,7 @@ body{
     background-attachment: fixed;
     background-position: top;
     backdrop-filter: blur(5px);
+    backdrop-filter: brightness(0.3);
 }
 
 .navbar .inteligencia{
@@ -276,7 +277,7 @@ body{
         display: flex;
         align-items: center;
         flex-direction: column;
-        height: 60vh;
+        height: 45vh;
         margin-top: 5%;
         margin-bottom: 20%;
     }
@@ -318,8 +319,8 @@ body{
     .container > .agro-IA{
         display: flex;
         flex-direction: column;
-        height: 50vh;
-        margin-top: 10%;
+        height: 60vh;
+        margin-top: 35%;
         margin-bottom: 10%; 
     }
     
@@ -342,7 +343,6 @@ body{
     .container > h1{
         font-size: 4rem;
     }
-
     .container > .intro-IA{
         display: flex;
         align-items: center;
@@ -351,19 +351,27 @@ body{
         margin-top: 5%;
         margin-bottom: 5%; 
     }
+    .container > .intro-IA > .text-intro > p{
+        font-size: 1.3rem;
+    }
 
     .container > .func-IA{
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
-        height: 50vh;
+        height: 30vh;
+    }
+    .container > .func-IA > .text-func > p{
+        font-size: 1.3rem;
     }
 
     .container > .agro-IA{
         display: flex;
         flex-direction: column;
         height: 50vh;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin-top: 40%;
+    }
+    .container > .agro-IA > .text-agro > p{
+        font-size: 1.3rem;
     }
 }
