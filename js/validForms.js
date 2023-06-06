@@ -214,9 +214,8 @@ function imgURL(){
         const url = fr.result;
         img.src = url;
         img.alt = "Preview da imagem";
-        botaoEnviar.setAttribute("style", "margin-top: 230px;");
-        fieldset.setAttribute("style", "height: 150vh;");
-        img.setAttribute("style", "display: flex;");
+        img.setAttribute("style", "display: block;");
+        botaoEnviar.setAttribute("style", "margin-top: 55px;");
         
         localStorage.setItem("img", url);
     });
