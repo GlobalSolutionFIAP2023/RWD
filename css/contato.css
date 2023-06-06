@@ -55,7 +55,7 @@ span{
 fieldset{
     border: none;
     outline: none;
-    height: 125vh;
+    
 }
 fieldset p{
     width: 100%;
@@ -109,21 +109,6 @@ fieldset #idArquivo{
     font-size: 16px;
 }
 
-fieldset input[type="submit"]{
-    cursor: pointer;
-    background-color: antiquewhite;
-    font-size: 20px;
-    height: 45px;
-    margin-bottom: 30px;
-    transition: ease-out .3s;
-}
-fieldset input[type="submit"]:hover{
-    transform: scale(1.02);
-    transition: ease-in .3s;
-    letter-spacing: 2px;
-}
-
-
 fieldset #campoMensagem{
     height: 12.5rem;
 }
@@ -132,16 +117,23 @@ fieldset #campoFoto input{
     line-height: 50px;
 }
 
-
 fieldset #previewFoto{
-    display: none;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
+    display: flex;
     border-radius: 5%;
-    margin-left: 28%;
-    border: none;
-    outline: none;
+}
+
+fieldset input[type="submit"]{
+    cursor: pointer;
+    background-color: antiquewhite;
+    font-size: 20px;
+    height: 45px;
+    margin: 40px 0;
+    transition: ease-out .3s;
+}
+fieldset input[type="submit"]:hover{
+    transform: scale(1.02);
+    transition: ease-in .3s;
+    letter-spacing: 2px;
 }
 
 
